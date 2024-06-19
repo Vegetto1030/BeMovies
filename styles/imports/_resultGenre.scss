@@ -1,0 +1,140 @@
+.result-genre {
+  @include container;
+  margin-bottom: 110px;
+
+  .result {
+    grid-column: 2/-2;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+
+    .result-movies {
+      max-width: 1000px;
+
+
+      .result-filter {
+        color: #ffffff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 10px;
+
+      }
+
+      .swiper {
+        .swiper-wrapper {
+
+          .swiper-slide {
+            // width: 234px;
+            // height: 350px;
+            // position: relative;
+            // cursor: pointer;
+            height: auto !important;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .arrow-swiper {
+    grid-column: 2/-2;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .button-prev2 {
+      position: absolute;
+      left: 0;
+      cursor: pointer;
+      top: -175px;
+    }
+
+    .button-next2 {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      top: -175px;
+
+    }
+  }
+}
+
+.swiper-slide:hover .overview {
+  transform: translateY(0%);
+}
+
+.overview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(101%);
+
+  .overTitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 75px;
+    margin-bottom: 23px;
+  }
+
+  .overDate {
+    color: #B0B0B0;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 23px;
+  }
+
+  .overGenre {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 23px;
+    max-width: 200px;
+    overflow-wrap: normal;
+  }
+
+  .star {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+
+  }
+
+  .overNote {
+    color: #C00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+  }
+}

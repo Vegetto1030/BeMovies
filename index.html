@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>BeMovies</title>
+</head>
+<body>
+    <header>
+        <div class="home">
+            <div class="logo">
+                <img src="images/BeMovies.png">
+            </div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#SEARCH">SEARCH</a></li>
+                <li><a href="#LATEST">LATEST</a></li>
+                <li><a href="#GENRES">GENRES</a></li>
+                <li><a class="signin" href="#REGISTER">REGISTER</a></li>
+                <li><a class="signin" href="#LOGIN">SIGNIN</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="SEARCH" class="search">
+        <form  class="searchform">
+            <input type="text" id="searchTitle" placeholder="Search a movie...">
+            <button type="submit"><img src="images/searchA.png"></button>
+        </form>
+    </div>
+    <div class="all-content1 search-result"> 
+        <div class="result">
+            <div class="result-movies">
+                <p class="result-search">Results for “godfather”</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-swiper">
+            <div class="button-prev"><img src="images/Vector.svg" alt=""></div>
+            <div class="button-next"><img src="images/Vector-next.svg" alt=""></div>
+        </div>
+    </div>
+    <div id="LATEST" class="all-content"> 
+        <div class="result">
+            <div class="result-movies">
+                <p class="result-search">Latest releases</p>
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-swiper">
+            <div class="button-prev1"><img src="images/Vector.svg" alt=""></div>
+            <div class="button-next1"><img src="images/Vector-next.svg" alt=""></div>
+        </div>
+    </div>
+    <div id="GENRES" class="bygenre">
+        <div class="title-genre">
+            <h4>Movies by genre</h4>
+            <div class="genre-slider">
+                <ul class="genres-cat">
+                    <li class="selected">Comedy</li>
+                    <li>Drama</li>
+                    <li>Action</li>
+                    <li>Romance</li>
+                    <li>Fantasy</li>
+                    <li>animation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="result-genre"> 
+        <div class="result">
+            <div class="result-movies">
+                <p class="result-filter">Comedy</p>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt="">
+                            <div class="overview">
+                                <h2 class="overTitle">Title</h2>
+                                <p class="overDate">Date</p>
+                                <p class="overGenre">Genre</p>
+                                <span><img class="star" src="images/star.png" alt=""></span>
+                                <p class="overNote">Note</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-swiper">
+            <div class="button-prev2"><img src="images/Vector.svg" alt=""></div>
+            <div class="button-next2"><img src="images/Vector-next.svg" alt=""></div>
+        </div>
+    </div>
+    <div id="LOGIN" class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal"><img class="close" src="images/cross-button.svg"></span>
+            <div class="slider"></div>
+            <div class="btn">
+                <button class="signup">Signup</button>
+                <button class="login">Login</button>
+            </div>
+            <div class="form-section">
+                <div class="signup-box">
+                    <input type="text" class="name element" placeholder="Enter your name">
+                    <input type="email" class="email element" placeholder="youremail@email.com">
+                    <input type="password" class="password element" placeholder="password">
+                    <input type="password" class="password element" placeholder="Confirm password"><br>
+                    <button class="signbtn">Signup</button>
+                </div>
+                <div class="login-box">
+                    <input type="username" class="username element" placeholder="Username">
+                    <input type="password" class="password element" placeholder="Password">
+                    <label class="remember" for="rememberMe">
+                        <input type="checkbox" class="rememberme" id="rememberMe">Remember me
+                    </label>
+                    <button class="logbtn">Login</button>
+                    <p class="forget">I forgot my password</p>
+                    <p>Not a member yer ? <a href="#">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="myPopup">
+        <div class="popup-container">
+            <span id="closepopup" ><img class="close" src="images/cross-button.svg" alt="close cross"></span>
+            <div class="popup-content">
+                <img id="popupImage" src="images/Rectangle 1.svg" alt="">
+                <div class="popupInfo">
+                    <h2>Title</h2>
+                    <p class="year">Year</p>
+                    <p class="note"><img src="images/star.png" alt="star" srcset="">Note</p>
+                    <p class="genre">Genre</p>
+                    <p class="description">Description
+                        Squirty cheese cheese and wine roquefort. Say cheese fondue swiss bavarian bergkase everyone
+                        loves queso. When the cheese comes out happy red leicester bocconcini when the cheese comes out
+                        everybody's happy croque monsieur airedale rubber cheese cheese and wine. Babybel the big
+                        cheese.
+                    </p>
+                    <p class="cast">CAST:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bottom">
+            <div class="logo">
+                <img src="images/BeMovies.png">
+            </div>
+        </div>
+        <div class="footbar">
+            <ul>
+                <li><a href="#SEARCH">SEARCH</a></li>
+                <li><a href="#LATEST">LATEST</a></li>
+                <li><a href="#GENRES">GENRES</a></li>
+                <li><a class="signin" href="#LOGIN">REGISTER</a></li>
+                <li><a class="signin" href="#LOGIN">SIGNIN</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>@2023 - All rights reserved</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 19,
+        navigation: {
+            nextEl: ".button-next",
+            prevEl: ".button-prev",
+            clickable: true,
+        },
+    });
+
+    const swiper1 = new Swiper(".mySwiper1", {
+        slidesPerView: 4,
+        spaceBetween: 19,
+        navigation: {
+            nextEl: ".button-next1",
+            prevEl: ".button-prev1",
+            clickable: true,
+        },
+    });
+    
+    const swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 4,
+        spaceBetween: 19,
+        navigation: {
+            nextEl: ".button-next2",
+            prevEl: ".button-prev2",
+            clickable: true,
+        },
+    });
+</script>
+</body>
+
+</html>

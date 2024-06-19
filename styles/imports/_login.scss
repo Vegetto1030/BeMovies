@@ -1,0 +1,303 @@
+.modal {
+
+    display: none; // don't forget to disable
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .modal-content {
+        background-color: #000000;
+        margin: 120px auto;
+        width: 100%;
+        max-width: 410px;
+        position: relative;
+
+
+        .close {
+            display: flex;
+            justify-content: flex-start;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            font-size: 24px;
+            cursor: pointer;
+
+            img {
+                color: rgb(255, 255, 255);
+            }
+        }
+
+
+        .btn {
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            font-family: 'Inria Sans', sans-serif;
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.72px;
+            text-transform: uppercase;
+
+            .login {
+                width: 148px;
+                height: 54px;
+                flex-shrink: 0;
+                border-radius: 0px 8px 8px 0px;
+                background: #C00;
+                color: inherit;
+                border: none;
+                padding: 0;
+                font: inherit;
+                cursor: pointer;
+                outline: inherit;
+            }
+
+            .signup {
+                background-color: transparent;
+                width: 148px;
+                height: 54px;
+                border-radius: 8px 0px 0px 8px;
+                border: 1px solid #ffffff;
+                border-right: none;
+                color: inherit;
+                padding: 0;
+                font: inherit;
+                cursor: pointer;
+                outline: inherit;
+            }
+        }
+
+        .form-section {
+            display: flex;
+            justify-content: center;
+
+            .signup-box {
+                display: none;
+                flex-direction: column;
+                align-content: center;
+                margin-top: 54px;
+                max-width: 288px;
+
+                .name {
+                    width: 288px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: inherit;
+                    border: none;
+                    padding: 0;
+                    font: inherit;
+                    cursor: pointer;
+                    outline: inherit;
+                    border-radius: 8px;
+                    background: #FFF;
+                    margin-bottom: 25px;
+                    text-indent: 20px;
+
+                }
+
+                .email {
+                    width: 288px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: inherit;
+                    border: none;
+                    padding: 0;
+                    font: inherit;
+                    cursor: pointer;
+                    outline: inherit;
+                    border-radius: 8px;
+                    background: #FFF;
+                    margin-bottom: 25px;
+                    text-indent: 20px;
+
+                }
+
+                .password {
+                    width: 288px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: inherit;
+                    border: none;
+                    padding: 0;
+                    font: inherit;
+                    cursor: pointer;
+                    outline: inherit;
+                    border-radius: 8px;
+                    background: #FFF;
+                    margin-bottom: 25px;
+                    text-indent: 20px;
+
+                }
+
+                .signbtn {
+                    width: 288px;
+                    height: 47px;
+                    flex-shrink: 0;
+                    font-family: 'Inria Sans', sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                    color: inherit;
+                    border: none;
+                    cursor: pointer;
+                    outline: inherit;
+                    border-radius: 8px;
+                    background-color: #C00;
+                    color: #FFF;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .login-box {
+                display: flex;
+                flex-direction: column;
+                margin-top: 54px;
+                max-width: 288px;
+
+                .username {
+                    width: 288px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: inherit;
+                    border: none;
+                    padding: 0;
+                    font: inherit;
+                    cursor: pointer;
+                    outline: inherit;
+                    border-radius: 8px;
+                    background: #FFF;
+                    margin-bottom: 25px;
+                    text-indent: 20px;
+
+                }
+
+                .password {
+                    width: 288px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: inherit;
+                    border: none;
+                    padding: 0;
+                    font: inherit;
+                    cursor: pointer;
+                    outline: inherit;
+                    border-radius: 8px;
+                    background: #FFF;
+                    margin-bottom: 22px;
+                    text-indent: 20px;
+
+                }
+
+                .remember {
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    border: none;
+                    padding: 0;
+                    cursor: pointer;
+                    border-radius: 8px;
+                    margin-bottom: 46px;
+                    color: #FFF;
+                }
+
+
+                .logbtn {
+                    width: 288px;
+                    height: 47px;
+                    flex-shrink: 0;
+                    font-family: 'Inria Sans', sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                    color: inherit;
+                    border: none;
+                    cursor: pointer;
+                    outline: inherit;
+                    border-radius: 8px;
+                    background-color: #C00;
+                    color: #FFF;
+                    margin-bottom: 30px;
+                }
+
+                .forget {
+                    color: #C00;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 100px;
+
+                    a {
+                        color: #C00;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}

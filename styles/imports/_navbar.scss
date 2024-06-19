@@ -1,0 +1,39 @@
+header {
+    padding: 30px 0;
+    background-color: #141517;
+    @include container;
+
+    .home {
+        grid-column: 2/4;
+
+        .logo {}
+    }
+
+    .navbar {
+        grid-column: 10/-2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+
+            li {
+                a {
+                    color: #FFF;
+                    font-family: 'Inria Sans', sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.42px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+    }
+}

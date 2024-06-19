@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&family=Inter:wght@400;500;700&display=swap');
+
+@mixin container($max-width: 1080px) {
+  display: grid;
+  grid-template-columns:
+    minmax(5vw, 1fr) repeat(12, minmax(11px, $max-width / 12)) minmax(5vw, 1fr);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
+}

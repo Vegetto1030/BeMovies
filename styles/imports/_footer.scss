@@ -1,0 +1,55 @@
+footer {
+    @include container;
+    padding: 70px 0;
+    margin-top: auto;
+    background-color: #141517;
+    margin-top: auto;
+
+    .bottom {
+        grid-column: 2/4;
+    }
+
+    .footbar {
+        grid-column: 5/11;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 30px;
+
+            li {
+                a {
+                    color: #FFF;
+                    font-family: 'Inria Sans', sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.42px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+
+    .copyright {
+        grid-column: -4/-2;
+
+
+        span {
+            display: flex;
+            justify-content: end;
+            color: #B8B8B8;
+            font-family: 'Inria Sans', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+}

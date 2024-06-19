@@ -1,0 +1,54 @@
+.bygenre {
+    .title-genre {
+        @include container;
+        padding-top: 95px;
+
+        h4 {
+            grid-column: 2/-2;
+            color: #FFF;
+            text-align: center;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        
+        .genre-slider {
+            grid-column: 2/-2;
+            display: flex;
+            justify-content: center;
+            padding-top: 45px;
+
+            ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                gap: 45px;
+                padding-bottom: 25px;
+                border-bottom: 1px solid white;
+
+                li {
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-decoration: none;
+                        cursor: pointer;
+                }
+                .selected {
+                    border-radius: 8px;
+                    background: #C00;
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    padding: 7px 10px;
+                }
+            }
+        }
+    }
+}
+.swiper-slide{
+    cursor: pointer;
+}

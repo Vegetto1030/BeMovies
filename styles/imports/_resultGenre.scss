@@ -1,48 +1,41 @@
 .result-genre {
-  @include container;
-  margin-bottom: 110px;
+    @include container;
+    margin-bottom: 110px;
 
-  .result {
-    grid-column: 2/-2;
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
+    .result {
+        grid-column: 2/-2;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
 
-    .result-movies {
-      max-width: 1000px;
+        .result-movies {
+            max-width: 1000px;
 
 
-      .result-filter {
-        color: #ffffff;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 10px;
-
-      }
-
-      .swiper {
-        .swiper-wrapper {
-
-          .swiper-slide {
-            // width: 234px;
-            // height: 350px;
-            // position: relative;
-            // cursor: pointer;
-            height: auto !important;
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              display: block;
+            .result-filter {
+                color: #ffffff;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 10px;
+            }  
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        height: auto !important;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: block;
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 
   .arrow-swiper {
     grid-column: 2/-2;
@@ -107,34 +100,32 @@
     margin-bottom: 23px;
   }
 
-  .overGenre {
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 23px;
-    max-width: 200px;
-    overflow-wrap: normal;
-  }
+    .overGenre {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 23px;
+        max-width: 200px;
+        overflow-wrap: normal;
+    }
 
-  .star {
-    width: 35px;
-    height: 35px;
-    margin-bottom: 8px;
+    .star {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 8px;
+    }
 
-  }
-
-  .overNote {
-    color: #C00;
-    text-align: center;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-
-  }
+    .overNote {
+        color: #C00;
+        text-align: center;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 }

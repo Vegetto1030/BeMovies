@@ -4,57 +4,57 @@
 
 .all-content1{
   
-  @include container;
-  // display: none;
-  .result {
-    grid-column: 2/-2;
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    .result-movies {
-      max-width: 1000px;
-      .result-search {
-        color: #ffffff;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 10px;
-      }
-      .swiper {
-        .swiper-wrapper {
-          .swiper-slide {
-              height: auto !important;
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              display: block;
+    @include container;
+    // display: none;
+    .result {
+      grid-column: 2/-2;
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      .result-movies {
+        max-width: 1000px;
+        .result-search {
+          color: #ffffff;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 10px;
+        }
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+                height: auto !important;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+              }
             }
           }
         }
       }
     }
-  }
-  .arrow-swiper {
-    grid-column: 2/-2;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    .button-prev {
-      position: absolute;
-      left: 0;
-      cursor: pointer;
-      top: -175px;
+    .arrow-swiper {
+      grid-column: 2/-2;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .button-prev {
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        top: -175px;
+      }
+      .button-next {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        top: -175px;
+  
+      }
     }
-    .button-next {
-      position: absolute;
-      right: 0;
-      cursor: pointer;
-      top: -175px;
-
-    }
   }
-}
-
+  

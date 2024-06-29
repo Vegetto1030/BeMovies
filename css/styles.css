@@ -6,17 +6,6 @@
   font-family: "Inter", sans-serif;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  opacity: 1;
-  transition: 0.5s ease-in-out;
-}
-
-.swiper-button-disabled {
-  opacity: 0.5;
-  transition: 0.5s ease-in-out;
-}
-
 body {
   min-height: 100vh;
   background: #191B20;
@@ -787,4 +776,15 @@ header .navbar ul li a {
 }
 .search .searchform button img {
   padding-top: 4px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */

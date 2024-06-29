@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>BeMovies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -24,22 +24,24 @@
             </ul>
         </div>
     </header>
+
     <div id="SEARCH" class="search">
-        <form  class="searchform">
+        <form class="searchform">
             <input type="text" id="searchTitle" placeholder="Search a movie...">
             <button type="submit"><img src="images/searchA.png"></button>
         </form>
     </div>
+
     <div class="all-content1 search-result"> 
         <div class="result">
             <div class="result-movies">
                 <p class="result-search">Results for “godfather”</p>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
                         <div class="swiper-slide">Slide 5</div>
                         <div class="swiper-slide">Slide 6</div>
                         <div class="swiper-slide">Slide 6</div>
@@ -53,16 +55,17 @@
             <div class="button-next"><img src="images/Vector-next.svg" alt=""></div>
         </div>
     </div>
+
     <div id="LATEST" class="all-content"> 
         <div class="result">
             <div class="result-movies">
                 <p class="result-search">Latest releases</p>
                 <div class="swiper mySwiper1">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
                         <div class="swiper-slide">Slide 5</div>
                         <div class="swiper-slide">Slide 6</div>
                         <div class="swiper-slide">Slide 6</div>
@@ -72,10 +75,11 @@
             </div>
         </div>
         <div class="arrow-swiper">
-            <div class="button-prevL"><img src="images/Vector.svg" alt=""></div>
-            <div class="button-nextL"><img src="images/Vector-next.svg" alt=""></div>
+            <div class="button-prev1"><img src="images/Vector.svg" alt=""></div>
+            <div class="button-next1"><img src="images/Vector-next.svg" alt=""></div>
         </div>
     </div>
+
     <div id="GENRES" class="bygenre">
         <div class="title-genre">
             <h4>Movies by genre</h4>
@@ -86,18 +90,20 @@
                     <li>Action</li>
                     <li>Romance</li>
                     <li>Fantasy</li>
-                    <li>Animation</li>
+                    <li>animation</li>
                 </ul>
             </div>
         </div>
     </div>
+
     <div class="result-genre"> 
         <div class="result">
             <div class="result-movies">
                 <p class="result-filter">Comedy</p>
                 <div class="swiper mySwiper2">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt="">
+                        <div class="swiper-slide">
+                            <img src="images/Rectangle 1.svg" alt="">
                             <div class="overview">
                                 <h2 class="overTitle">Title</h2>
                                 <p class="overDate">Date</p>
@@ -106,10 +112,10 @@
                                 <p class="overNote">Note</p>
                             </div>
                         </div>
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
-                        <div class="swiper-slide"><img src="images/Rectangle 1.svg"></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Rectangle 1.svg" alt=""></div>
                         <div class="swiper-slide">Slide 5</div>
                         <div class="swiper-slide">Slide 6</div>
                         <div class="swiper-slide">Slide 6</div>
@@ -119,13 +125,14 @@
             </div>
         </div>
         <div class="arrow-swiper">
-            <div class="button-prevG"><img src="images/Vector.svg" alt=""></div>
-            <div class="button-nextG"><img src="images/Vector-next.svg" alt=""></div>
+            <div class="button-prev2"><img src="images/Vector.svg" alt=""></div>
+            <div class="button-next2"><img src="images/Vector-next.svg" alt=""></div>
         </div>
     </div>
+
     <div id="LOGIN" class="modal" id="myModal">
         <div class="modal-content">
-            <span class="close" id="closeModal"><img class="close" src="images/cross-button.svg"></span>
+            <span class="close" id="closeModal"><img class="close" src="images/cross-button.svg" alt="close cross"></span>
             <div class="slider"></div>
             <div class="btn">
                 <button class="signup">Signup</button>
@@ -134,8 +141,8 @@
             <div class="form-section">
                 <div class="signup-box">
                     <input type="text" class="name element" placeholder="Enter your name">
-                    <input type="email" class="email element" placeholder="youremail@email.com">
-                    <input type="password" class="password element" placeholder="password">
+                    <input type="email" class="email element" placeholder="Youremail@email.com">
+                    <input type="password" class="password element" placeholder="Password">
                     <input type="password" class="password element" placeholder="Confirm password"><br>
                     <button class="signbtn">Signup</button>
                 </div>
@@ -147,20 +154,21 @@
                     </label>
                     <button class="logbtn">Login</button>
                     <p class="forget">I forgot my password</p>
-                    <p>Not a member yer ? <a href="#">Sign up</a></p>
+                    <p>Not a member yet? <a href="#">Sign up</a></p>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="popup" id="myPopup">
         <div class="popup-container">
-            <span id="closepopup" ><img class="close" src="images/cross-button.svg" alt="close cross"></span>
+            <span id="closepopup"><img class="close" src="images/cross-button.svg" alt="close cross"></span>
             <div class="popup-content">
                 <img id="popupImage" src="images/Rectangle 1.svg" alt="">
                 <div class="popupInfo">
                     <h2>Title</h2>
                     <p class="year">Year</p>
-                    <p class="note"><img src="images/star.png" alt="star" srcset="">Note</p>
+                    <p class="note"><img src="images/star.png" alt="star">Note</p>
                     <p class="genre">Genre</p>
                     <p class="description">Description
                         Squirty cheese cheese and wine roquefort. Say cheese fondue swiss bavarian bergkase everyone
@@ -173,10 +181,11 @@
             </div>
         </div>
     </div>
+
     <footer>
         <div class="bottom">
             <div class="logo">
-                <img src="images/BeMovies.png">
+                <img src="images/BeMovies.png" alt="Logo of BEmovies">
             </div>
         </div>
         <div class="footbar">
@@ -195,5 +204,4 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
-
 </html>

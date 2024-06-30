@@ -253,7 +253,7 @@ const swiper = new Swiper(".mySwiper", {
                                   <p class="overDate">${getYear(release_date)}</p>
                                   <p class="overGenre">${getGenreName(genre_ids)}</p>
                                   <span><img class="star" src="images/star.png"></span>
-                                  <p class="overNote">${vote_average}</p>
+                                  <p class="overNote">${Math.round(vote_average * 10)/10}</p>
                               </div>`;
   
       filterWrapper.appendChild(movieEL);
@@ -305,7 +305,7 @@ const swiper = new Swiper(".mySwiper", {
                                   <p class="overDate">${getYear(release_date)}</p>
                                   <p class="overGenre">${getGenreName(genre_ids)}</p>
                                   <span><img class="star" src="images/star.png"></span>
-                                  <p class="overNote">${vote_average}</p>
+                                  <p class="overNote">${Math.round(vote_average * 10)/10}</p>
                               </div>`;
   
       searchWrapper.appendChild(movieEL);
@@ -349,7 +349,7 @@ const swiper = new Swiper(".mySwiper", {
                                   <p class="overDate">${getYear(release_date)}</p>
                                   <p class="overGenre">${getGenreName(genre_ids)}</p>
                                   <span><img class="star" src="images/star.png"></span>
-                                  <p class="overNote">${vote_average}</p>
+                                  <p class="overNote">${Math.round(vote_average * 10)/10}</p>
                               </div>`;
       latestWrapper.appendChild(movieEL);
       movieEL.addEventListener("click", () => {
@@ -362,7 +362,7 @@ const swiper = new Swiper(".mySwiper", {
             <div class="popupInfo">
                 <h2>${title}</h2>
                 <p class="year">${getYear(release_date)}</p>
-                <p class="note"><img src="images/star.png">${vote_average}</p>
+                <p class="note"><img src="images/star.png">${Math.round(vote_average * 10)/10}</p>
                 <p class="genre">${getGenreName(genre_ids)}</p>
                 <p class="description">${overview}
                 </p>
